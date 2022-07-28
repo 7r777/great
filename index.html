@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>crud</title>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="main">
+    <div class="header">
+       <div class="header-first">
+           <div class="left-line header-line"></div>
+           <h1>管理系统</h1>
+           <div class="right-line header-line"></div>
+       </div>
+        <div class="header-bottom">
+            <button class="green-button" onclick="add()">新增</button>
+            <button class="red-button" onclick="remove()">删除</button>
+        </div>
+    </div>
+    <div class="table">
+        <table id="form" cellspacing="0">
+
+        </table>
+    </div>
+    <div class="footer">
+        <span class="numInfo">sjjj</span>
+        <input type="button" class="green-button" onclick="prevPage()" value="上一页">
+        <input type="button" class="red-button" onclick="nextPage()" value="下一页">
+    </div>
+</div>
+<div class="hiddenPage"></div>
+<div class="edit">
+    <div class="head-title">查看学生信息</div>
+    <ul>
+        <li><label for="">aid</label><input type="text" class="edit-info"></li>
+        <li><label for="">pid</label><input type="text" class= "edit-info"></li>
+        <li><label for="">纬度</label><input type="text" class="edit-info"></li>
+        <li><label for="">经度</label><input type="text" class= "edit-info"></li>
+        <li><label for="">bssid</label><input type="text" class="edit-info"></li>
+        <li><label for="">网络名称</label><input type="text" class= "edit-info"></li>
+        <li><label for="">信号</label><input type="text" class="edit-info"></li>
+        <li><label for="">频率</label><input type="text" class= "edit-info"></li>
+        <li><label for="">信道</label><input type="text" class="edit-info"></li>
+        <li><label for="">中心频率</label><input type="text" class= "edit-info"></li>
+        <li><label for="">时间</label><input type="text" class="edit-info"></li>
+        <li><label for="">带宽</label><input type="text" class= "edit-info"></li>
+    </ul>
+    <div class="edit-btn">
+        <button class="edit-submit" ></button>
+        <button class="edit-cancel" onclick="cancel()">取消</button>
+    </div>
+</div>
+</body>
+</html>
